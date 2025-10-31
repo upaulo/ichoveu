@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+	<link rel="icon" type="image/x-icon" href="./src/assets/iChoveuIcon.png">
+	<title>iChoveu</title>
+</head>
+<body>
+	<header>
+		<img src="./src/assets/iChoveuIcon.png" alt="page icon">
+		<form id="search-form">
+			<input type="text" placeholder="cidade" id="search-input">
+			<button type="submit" id="search-button">
+				<i class="material-symbols-outlined search">
+					search
+				</i>
+			</button>
+		</form>
+
+		<button id="theme-toggle">
+			<i class="material-symbols-outlined theme">
+				dark_mode
+			</i>
+		</button>
+	</header>
+
+	<main>
+		<h1 id="info"></h1>
+		<ul id="cities"></ul>
+
+		<div id="overlay" class="overlay hidden">
+			<div id="forecast-container" class="forecast-container hidden">
+				<button id="close-forecast">
+					<i class="material-symbols-outlined">
+						close
+					</i>
+				</button>
+				<div id="weekdays" class="weekdays"></div>
+			</div>
+		</div>
+	</main>
+</body>
+<script type="module" src="src/main.js"></script>
+</html>
